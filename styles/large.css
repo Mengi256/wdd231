@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#FF00FF;
+    --secoundary-color: #330033;
+      --background-color: #f2e6f2;
+    --heading-font:"Lato", sans-serif;
+    --paragraphy-font:"Open Sans", sans-serif;
+
+}
+
+@media(min-width:750px){
+    header, main, footer,nav{
+        max-width:60rem ;
+        margin: 0 auto;
+    }
+    header,footer,nav{
+        padding: 1rem 2rem;
+    }
+    header{
+        justify-content: flex-start;
+    }
+    #menu{
+        display: none;
+    }
+    .navigation{
+        flex-direction: row;
+        background: var(--secoundary-color);
+    }
+    .navigation li{
+        display: block;
+    }
+    .main{
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+    }
+    .courses-section{
+        grid-column:1/-1;
+    }
+}
