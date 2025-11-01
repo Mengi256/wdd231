@@ -167,7 +167,7 @@ h2{
 }
 button{
     padding: 0.4rem 1rem;
-    background-color: var(--primary-color);
+    background-color: #f96df9;
     color: var(--secoundary-color);
     text-align: center;
     border: none;
