@@ -157,8 +157,71 @@ h2{
     color: #f2e6f2;
     text-align: center;
 }
-footer{
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+    align-items: center;
+    padding: 1rem;
+}
+button{
+    padding: 0.4rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secoundary-color);
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+button:hover{
+    background-color: #f96df9;
+}
+.footer-date{
     background-color: var(--secoundary-color);
   padding: 1rem;
 
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-logo a:link,
+.footer-logo a:visited{
+    display: inline-block;
+    text-decoration: none;
+    color: #330033;
+
+}
+.logo{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.courses-list{
+   display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+   
+    align-items: center;
+ 
+    
+}
+
+.course-div div{
+   
+    background-color:var(--secoundary-color);
+    text-align: center;
+    font-family: var(--heading-font);
+    color: #fff;
+    border-radius:5px ;
+    padding: 0.6rem 1rem;
+
+
+   
 }

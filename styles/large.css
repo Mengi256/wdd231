@@ -17,6 +17,13 @@
         max-width:60rem ;
         margin: 0 auto;
     }
+    .courses-list{
+ 
+    grid-template-columns:repeat(3, 1fr)
+ 
+    
+}
+
     header,footer,nav{
         padding: 1rem 2rem;
     }
