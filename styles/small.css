@@ -111,6 +111,9 @@ background-color: var(--primary-color);
     text-decoration: none;
     font-family: var(--paragraphy-font);
 }
+.completed{
+    color: #fff;
+}
 
 .main{
     display: grid;
@@ -131,6 +134,7 @@ background-color: var(--primary-color);
 .student-name{
     font-family:var(--heading-font);
     color: var(--secoundary-color);
+    font-weight: 700;
 }
 h2{
     background-color:var(--secoundary-color);
@@ -145,8 +149,9 @@ h2{
 .main section p , .main section img{
     padding: 1rem;
 }
-.logo{
+.header-logo{
     border-radius: 10px;
+    width: 6rem;
 
 }
 .student-photo{
@@ -207,20 +212,19 @@ button:hover{
    display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-   
-    align-items: center;
+   align-items: center;
  
     
 }
 
-.course-div div{
+.course-div{
    
     background-color:var(--secoundary-color);
     text-align: center;
     font-family: var(--heading-font);
     color: #fff;
     border-radius:5px ;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 4rem;
 
 
    
