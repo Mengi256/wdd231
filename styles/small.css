@@ -154,6 +154,16 @@ h2{
     width: 6rem;
 
 }
+
+  .course-div.completed {
+    background-color: #d4edda; /* light green background */
+  }
+
+  .tick {
+    color: green;
+    font-weight: bold;
+    margin-right: 5px;
+  }
 .student-photo{
     width: 100%;
     max-width: 500px;
@@ -229,3 +239,13 @@ button:hover{
 
    
 }
+  .course-div.completed {
+    background-color: #f9d2f9; 
+    color: var(--secoundary-color);
+  }
+
+  .tick {
+    color: var(--secoundary-color);
+    font-weight: bold;
+    margin-right: 5px;
+  }
