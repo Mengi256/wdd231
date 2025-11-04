@@ -87,7 +87,9 @@ background-color: var(--primary-color);
 .navigation.show li{
     display: block;
 }
-
+.navigation li.current{
+    background-color: #ae5fae;
+}
 #menu.show::before{
 transform: rotate(45deg);
 top: 0;
@@ -103,6 +105,11 @@ background-color: var(--primary-color);
     background-color: var(--secoundary-color);
     padding: 0.4rem 0.4rem;
     
+}
+.navigation li:hover{
+    background-color:#FF00FF;
+
+   
 }
 .navigation li a:link,
 .navigation li a:visited{

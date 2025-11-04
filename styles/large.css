@@ -39,6 +39,7 @@
     }
     .navigation li{
         display: block;
+        
     }
     .main{
         grid-template-columns: 2fr 1fr;
