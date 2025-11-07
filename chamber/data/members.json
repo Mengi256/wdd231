@@ -1,0 +1,81 @@
+{"members" :[
+    {
+        "name": "Nitus Solutions",
+        "address": "Iganga main street",
+        "phoneNumber": "0701902456",
+        "website": "https://nitussolutions.com",
+        "membership": 2,
+        "image":"solution.webp"
+
+    },
+
+      {
+        "name": "Mengi Tech",
+        "address": "Nabidogha C",
+        "phoneNumber": "0703544245",
+        "website": "https://mengitech.com",
+        "membership":3,
+        "image":"tech.webp"
+
+    },
+
+      {
+        "name": "Bash Graphics",
+        "address": "Jinja road",
+        "phoneNumber": "0701365793",
+        "website": "https://bashgraphics.com",
+        "membership": 2,
+        "image":"graphics.webp"
+
+    },
+
+      {
+        "name": "Mama Piece Bakery",
+        "address": "Burubandi town",
+        "phoneNumber": "0765876900",
+        "website": "https://mamapiecebakery.com",
+        "membership": 1,
+        "image":"bakery.webp"
+
+    },
+      {
+        "name": "Neha Beauty Salon",
+        "address": "Iganga main street",
+        "phoneNumber": "0778272298",
+        "website": "https://nehabeautysalon.com",
+        "membership": 2,
+        "image":"salon.webp"
+
+    },
+      {
+        "name": "Felowship Drug Shop",
+        "address": "Iganga saaza road",
+        "phoneNumber": "0705670089",
+        "website": "https://fellowshipdrugshop.com",
+        "membership": 2,
+        "image":"drug.webp"
+
+    },
+      {
+        "name": "Chicken Spot",
+        "address": "Iganga main street",
+        "phoneNumber": "0758144216",
+        "website": "https://chickenspottt.com",
+        "membership": 3,
+        "image":"chicken.webp"
+
+    }
+    ,  {
+        "name": "Victoria Tours",
+        "address": "Iganga kaliro road",
+        "phoneNumber": "0700460780",
+        "website": "https://victoriatoursss.com",
+        "membership": 2,
+        "image":"tours.webp"
+
+    }
+
+
+
+
+]}
