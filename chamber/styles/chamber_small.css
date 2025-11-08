@@ -255,8 +255,8 @@ footer p{
     text-decoration: none;
 }
 .social-links img{
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     background-color: var(--background-color);
     padding: .6rem;
     border-radius: 10px;
