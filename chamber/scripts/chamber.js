@@ -1,5 +1,7 @@
 
 const members_container = document.querySelector("#members-container");
+const gridBtn = document.querySelector("#grid-btn");
+const listBtn = document.querySelector("#list-btn")
 
 
 async function getMembers(){
@@ -16,7 +18,7 @@ function Displaymembers (members){
         div.classList.add('member-box')
         div.innerHTML = `
         <img src="images/${member.image}" alt="${member.name}">
-        <h1> ${member.name}</h1>
+        <h2> ${member.name}</h2>
         <p>${member.address}</p>
         <p>${member.phoneNumber}</p>
         <p><strong> Membership:</strong><span>${member.membership}</span></p>
@@ -27,6 +29,21 @@ function Displaymembers (members){
     });
 
 }
+gridBtn.addEventListener('click', () => {
+
+  members_container.classList.add('grid');
+
+  members_container.classList.remove('list');
+
+});
+
+listBtn.addEventListener('click', () => {
+
+  members_container.classList.add('list');
+
+  members_container.classList.remove('grid');
+
+});
 getMembers()
 
 
@@ -48,3 +65,6 @@ menu.addEventListener("click",function(){
     navigation.classList.toggle("show");
     header_img_box.classList.toggle("show")
 })
+
+
+
