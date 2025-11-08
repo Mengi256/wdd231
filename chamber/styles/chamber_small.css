@@ -40,6 +40,7 @@ body{
 }
 .header-img-box img{
     width: 2rem;
+    height: 2rem;
 }
 
 
@@ -181,7 +182,8 @@ background-color:var(--secondary-color);}
    
 }
 .member-box img{
-    width: 4em;
+    width: 4rem;
+    height: 4rem;
 }
  .member-box h2{
     font-size: 1rem;
@@ -245,7 +247,8 @@ footer p{
     text-decoration: none;
 }
 .social-links img{
-    width: 4.8rem;
+    width: 4rem;
+    height: 4rem;
     background-color: var(--background-color);
     padding: .6rem;
     border-radius: 10px;
