@@ -288,13 +288,10 @@ footer p{
 }
 
 /* HOME PAGE */
-.hero-section-box{
-    background-color:var(--secondary-color);
-}
 
    .hero-section {
     background: 
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        linear-gradient(rgb(58, 6, 58), rgba(228, 128, 228, 0.1)),
         url("https://mengi256.github.io/wdd231/chamber/images/chamber.webp");
     background-size: cover;
     background-position: center;
@@ -315,7 +312,7 @@ footer p{
 }
 .hero-heading{
     font-family: var(--heading-font);
-    color:var(--background-color);
+    color:#fff;
     font-weight: 900;
     font-size: 3rem;
 }
