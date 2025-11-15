@@ -291,7 +291,7 @@ footer p{
 
    .hero-section {
     background: 
-        linear-gradient(rgb(58, 6, 58), rgba(228, 128, 228, 0.1)),
+        linear-gradient(rgb(162, 162, 162), rgba(228, 128, 228, 0.1)),
         url("https://mengi256.github.io/wdd231/chamber/images/chamber.webp");
     background-size: cover;
     background-position: center;
@@ -300,9 +300,7 @@ footer p{
 }
 
     
-main{
-    background-color: #330033;
-}
+
 .hero-info{
     display: flex;
     flex-direction: column;
@@ -314,7 +312,7 @@ main{
 }
 .hero-heading{
     font-family: var(--heading-font);
-    color:#fff;
+    color:var(--secondary-color);
     font-weight: 900;
     font-size: 3rem;
 }
@@ -336,7 +334,7 @@ main{
 .way-finding{
      margin: 2rem 0 0 1rem;
     font-family: var(--heading-font);
-    color: var(--background-color);
+    color: var(--secondary-color);
 
 }
 
@@ -347,16 +345,15 @@ main{
     margin: 2rem 1rem;
 }
 .big-container h2{
-    background-color:var(--background-color);
+    background-color: var(--secondary-color);
     width: 100%;
-    color: var(--secondary-color);
+    color: var(--background-color);
     font-family: var(--heading-font);
     padding: 1rem;
 }
 .current-event, #current-weather, #forecast, .spotlight-card {
 
 box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
-background-color: #FFA3FF;
 }
 .event h3, .event p, .weather-box p{
     padding: .2rem 1rem;
@@ -377,7 +374,7 @@ background-color: #FFA3FF;
 #spotlights h2{
     text-align: center;
     font-family: var(--heading-font);
-    color: var(--background-color);
+    color: var(--secondary-color);
 }
 .spotlight-grid{
     display: grid;
