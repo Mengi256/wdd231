@@ -291,16 +291,19 @@ footer p{
 .hero-section-box{
     background-color:var(--secondary-color);
 }
-.hero-section{
-     background: linear-gradient( rgba(32,32,32,0.6)) ,url("https://mengi256.github.io/wdd231/chamber/images/chamber.webp");
 
+   .hero-section {
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://mengi256.github.io/wdd231/chamber/images/chamber.webp");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     height: 60vh;
-   
-    
 }
+
+    
+
 .hero-info{
     display: flex;
     flex-direction: column;
