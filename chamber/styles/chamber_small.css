@@ -300,7 +300,9 @@ footer p{
 }
 
     
-
+main{
+    background-color: #330033;
+}
 .hero-info{
     display: flex;
     flex-direction: column;
@@ -334,7 +336,7 @@ footer p{
 .way-finding{
      margin: 2rem 0 0 1rem;
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--background-color);
 
 }
 
@@ -345,15 +347,16 @@ footer p{
     margin: 2rem 1rem;
 }
 .big-container h2{
-    background-color: var(--secondary-color);
+    background-color:var(--background-color);
     width: 100%;
-    color: var(--background-color);
+    color: var(--secondary-color);
     font-family: var(--heading-font);
     padding: 1rem;
 }
 .current-event, #current-weather, #forecast, .spotlight-card {
 
 box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
+background-color: #FFA3FF;
 }
 .event h3, .event p, .weather-box p{
     padding: .2rem 1rem;
@@ -374,7 +377,7 @@ box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
 #spotlights h2{
     text-align: center;
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--background-color);
 }
 .spotlight-grid{
     display: grid;
