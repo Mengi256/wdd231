@@ -292,7 +292,8 @@ footer p{
     background-color:var(--secondary-color);
 }
 .hero-section{
-     background:linear-gradient(to top,rgba(32,32,32,0.1), rgba(32,32,32, 0.8)), url(../images/chamber.webp); 
+     background: linear-gradient( rgba(32,32,32,0.6)) ,url("https://mengi256.github.io/wdd231/chamber/images/chamber.webp");
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
