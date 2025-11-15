@@ -23,11 +23,40 @@
 }
 
 /* HOME PAGE */
-.current-event{
-   margin: 2rem;
-    grid-template-columns:  1fr 1fr;
-    align-items: stretch;
-  
+
+
+    .big-container {
+        flex-direction: row; /* main sections side by side */
+        gap: 20px;
+        padding: 2rem;
+    }
+
+    .big-container > section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .current-event {
+        flex: 1; 
+    }
+
+    
+    #weather {
+        flex: 1; 
+        flex-direction: row; 
+        gap: 20px;
+    }
+
+
+    #current-weather, #forecast {
+        flex: 1;
+    }
+
+.way-finding{
+     margin: 2rem 0 0 2.6rem;
+    
+
 }
 
 footer{

@@ -4,7 +4,7 @@
         "address": "Iganga main street",
         "phoneNumber": "0701902456",
         "website": "https://nitussolutions.com",
-        "membership": 2,
+        "membership": "Silver",
         "image":"solution.webp"
 
     },
@@ -14,7 +14,7 @@
         "address": "Nabidogha C",
         "phoneNumber": "0703544245",
         "website": "https://mengitech.com",
-        "membership":3,
+        "membership":"Gold",
         "image":"tech.webp"
 
     },
@@ -24,7 +24,7 @@
         "address": "Jinja road",
         "phoneNumber": "0701365793",
         "website": "https://bashgraphics.com",
-        "membership": 2,
+        "membership": "Member",
         "image":"graphics.webp"
 
     },
@@ -34,7 +34,7 @@
         "address": "Burubandi town",
         "phoneNumber": "0765876900",
         "website": "https://mamapiecebakery.com",
-        "membership": 1,
+        "membership": "Member",
         "image":"bakery.webp"
 
     },
@@ -43,7 +43,7 @@
         "address": "Iganga main street",
         "phoneNumber": "0778272298",
         "website": "https://nehabeautysalon.com",
-        "membership": 2,
+        "membership": "Gold",
         "image":"salon.webp"
 
     },
@@ -52,7 +52,7 @@
         "address": "Iganga saaza road",
         "phoneNumber": "0705670089",
         "website": "https://fellowshipdrugshop.com",
-        "membership": 2,
+        "membership": "Member",
         "image":"drug.webp"
 
     },
@@ -61,7 +61,7 @@
         "address": "Iganga main street",
         "phoneNumber": "0758144216",
         "website": "https://chickenspottt.com",
-        "membership": 3,
+        "membership": "Silver",
         "image":"chicken.webp"
 
     }
@@ -70,7 +70,7 @@
         "address": "Iganga kaliro road",
         "phoneNumber": "0700460780",
         "website": "https://victoriatoursss.com",
-        "membership": 2,
+        "membership": "Member",
         "image":"tours.webp"
 
     }
