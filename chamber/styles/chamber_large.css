@@ -21,6 +21,15 @@
      border-bottom:2px solid #330033 ;
   
 }
+
+/* HOME PAGE */
+.current-event{
+   margin: 2rem;
+    grid-template-columns:  1fr 1fr;
+    align-items: stretch;
+  
+}
+
 footer{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
