@@ -78,3 +78,4 @@ wdd_btn.addEventListener("click", () => displayCourses(courses.filter(c => c.sub
 
 
 displayCourses(courses);
+

@@ -1,3 +1,33 @@
+
+
+document.getElementById("timestamp").value = new Date().toISOString();
+
+
+const modalLinks = document.querySelectorAll("[data-modal]");
+const modals = document.querySelectorAll("dialog"); 
+const closes = document.querySelectorAll(".close");
+
+
+modalLinks.forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const modalId = link.dataset.modal;
+    const modal = document.getElementById(modalId);
+    modal.showModal();  
+  });
+});
+
+
+closes.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const dialog = btn.closest("dialog");
+    dialog.close();     
+  });
+});
+
+
+
+
 // ===== Members Section =====
 const members_container = document.querySelector("#members-container");
 const gridBtn = document.querySelector("#grid-btn");
@@ -204,3 +234,5 @@ if (spotlightContainer) {
 
     getSpotlightMembers();
 }
+
+

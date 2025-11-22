@@ -256,3 +256,11 @@ button:hover{
     font-weight: bold;
     margin-right: 5px;
   }
+
+  .course-dialog{
+    margin: 10rem auto;
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+    
+}

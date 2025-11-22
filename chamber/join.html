@@ -1,0 +1,242 @@
+ <!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iganga Chamber of Commerce </title>
+<meta name="description" content="A directory of Iganga Chamber of Commerce members.">
+<meta name="author" content="Mengi Mariam">
+<meta property="og:title" content="Iganga Chamber of Commerce Directory">
+<meta property="og:description" content="The Iganga Chamber of Commerce empowers local businesses, encourages investment, and connects entrepreneurs with valuable resources and growth opportunities">
+<meta property="og:image" content="https://mengi256.github.io/wdd231/chamber/images/chamber.webp">
+<meta property="og:url" content="https://mengi256.io/wdd231/chamber/directory.html">
+<link rel="icon" href="images/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<script src="scripts/chamber.js" defer></script>
+<link rel="stylesheet" href="styles/chamber_small.css">
+<link rel="stylesheet" href="styles/chamber_large.css" media="(min-width: 700px)">
+
+</head>
+
+  <body>
+    <div class="header-wrap">
+    <header>
+      <div class="header-img-box"> 
+      <img src="images/town.png" alt="Iganga town">
+      
+      </div>
+      <div id="menu"></div>
+    </header>
+    <nav>
+         <ul class="navigation"> 
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="directory.html">Directory</a></li>
+             <li id="current"><a href="join.html">Join</a></li>
+              <li><a href="discover.html">Discover</a></li>
+            </ul>
+         
+
+      </nav>
+    </div>
+  
+
+  <main>
+
+    <h1 class="join-heading">Join the Chamber of Commerce</h1>
+
+    <section class="form-and-cards">
+
+      <form action="thankyou.html" method="get" class="join-form">
+
+      
+        <label>
+          First Name:
+          <input 
+            type="text" 
+            name="firstName" 
+            required 
+            autocomplete="given-name"
+            title="Enter your first name">
+        </label>
+
+        <label>
+          Last Name:
+          <input 
+            type="text" 
+            name="lastName" 
+            required 
+            autocomplete="family-name"
+            title="Enter your last name">
+        </label>
+
+     
+        <label>
+          Organization Title:
+          <input 
+            type="text" 
+            name="orgTitle"
+            autocomplete="organization-title"
+            title="Your title within the organization"
+            pattern="[A-Za-z\s\-]{7,}">
+        </label>
+
+       
+        <label>
+          Email:
+          <input 
+            type="email" 
+            name="email" 
+            required
+            autocomplete="email"
+            placeholder="mengi2@email.com"
+            title="Enter a valid email address">
+        </label>
+
+      
+        <label>
+          Mobile Phone:
+          <input 
+            type="tel" 
+            name="phone" 
+            required
+            autocomplete="tel"
+            title="Enter your mobile number">
+        </label>
+
+     
+        <label>
+          Business / Organization Name:
+          <input 
+            type="text" 
+            name="organization" 
+            required 
+            autocomplete="organization"
+            title="Enter your organization name">
+        </label>
+
+    
+        <label>
+          Membership Level:
+          <select name="membership" required title="Choose a membership level">
+            <option value="">Select Level</option>
+            <option value="np">NP Membership (Non-profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+     
+        <label>
+          Business Description:
+          <textarea 
+            name="description" 
+            rows="4" 
+            title="Describe your business"></textarea>
+        </label>
+
+     
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <input type="submit" value="Submit Application" class="submit-btn">
+
+      </form>
+
+    
+      <section class="membership-cards">
+        <div class="card" id="np-card">
+          <h2>NP Membership</h2>
+          <a href="#" data-modal="np-modal">Learn More</a>
+        </div>
+
+        <div class="card" id="bronze-card">
+          <h2>Bronze Membership</h2>
+          <a href="#" data-modal="bronze-modal">Learn More</a>
+        </div>
+
+        <div class="card" id="silver-card">
+          <h2>Silver Membership</h2>
+          <a href="#" data-modal="silver-modal">Learn More</a>
+        </div>
+
+        <div class="card" id="gold-card">
+          <h2>Gold Membership</h2>
+          <a href="#" data-modal="gold-modal">Learn More</a>
+        </div>
+      </section>
+
+    </section>
+
+ 
+    <dialog class="modal" id="np-modal">
+      <div class="modal-content">
+        <h3>NP Membership Benefits</h3>
+        <p>No fee — Non-profit focused support.</p>
+        <button class="close">Close</button>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="bronze-modal">
+      <div class="modal-content">
+        <h3>Bronze Membership Benefits</h3>
+        <p>Basic advertising, event discounts.</p>
+        <button class="close">Close</button>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="silver-modal">
+      <div class="modal-content">
+        <h3>Silver Membership Benefits</h3>
+        <p>More visibility, spotlight positions, training.</p>
+        <button class="close">Close</button>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="gold-modal">
+      <div class="modal-content">
+        <h3>Gold Membership Benefits</h3>
+        <p>Premium advertising, priority events, top-tier features.</p>
+        <button class="close">Close</button>
+      </div>
+    </dialog>
+
+  </main>
+
+
+  <footer>
+    <div class="contact">
+      <h3>Iganga Chamber of Commerce</h3>
+      <p>Iganga Main Street</p>
+      <p>Iganga, Nyende Mall</p>
+      <a class="email" href="mailto:mengimagheed7@gmail.com">info@igangacc.com</a>
+      <p>(256)752722980</p>
+    </div>
+    <div class=" social-links">
+      <a href="https://facebook.com">
+        <img src="images/facebook.svg" alt="facebook logo">
+      </a>
+      <a href="https://youtube.com">
+        <img src="images/youtube.svg" alt="youtube logo">
+      </a>
+      <a href="https://linkedin.com">
+        <img src="images/linkedin.svg" alt="Linkedin logo">
+      </a>
+
+    </div>
+    <div class="footer-dates"> 
+      <p>WDD231 Class Project</p>
+      <p>MENGI MARIAM</p>
+   <p> &copy;<span id="year"></span> Iganga Chamber of Commerce</p>
+   <p id="lastmodified"></p>
+   </div>
+   
+   
+
+  </footer>
+  </body>
+  
+  </html>
