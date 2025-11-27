@@ -69,14 +69,14 @@ img{
 
  
 
-/* Responsive layout helpers */
+
 @media (min-width: 760px){
   body{padding: 28px}
   h1{font-size: 2rem}
   section{padding: 22px}
 }
 
-/* Accessibility helpers */
+
 a{color: var(--primary)}
 button, .btn{background: var(--primary); color: #fff; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer}
 
