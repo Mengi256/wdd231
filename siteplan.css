@@ -1,0 +1,83 @@
+/* styles.css - SheBloom Site Plan styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap');
+
+:root{
+  --primary: #c2185b;
+  --secondary: #f8c6d8;
+  --light-bg: #fff7f9;
+  --muted: #666666;
+  --page-padding: 20px;
+}
+
+*{box-sizing: border-box}
+
+body{
+  font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Arial;
+  margin: 0;
+  padding: var(--page-padding);
+  background: var(--light-bg);
+  color: #222;
+  line-height: 1.6;
+}
+
+header{
+  background: linear-gradient(180deg, rgba(194,24,91,0.08), rgba(248,198,216,0.12));
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3{
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--primary);
+  margin: 0 0 12px 0;
+}
+
+h1{font-size: 1.6rem}
+
+section{
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(194,24,91,0.08);
+}
+
+ul{margin: 0 0 0 1.25rem}
+
+.swatch-container{
+  display:flex;
+  gap: 18px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.color-swatch{
+  width: 84px;
+  height: 84px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.color-swatch.primary{background: var(--primary)}
+.color-swatch.secondary{background: var(--secondary)}
+.color-swatch.light-bg{background: var(--light-bg); border: 1px solid rgba(0,0,0,0.03)}
+
+img{
+   max-width: 20rem;
+}
+
+ 
+
+/* Responsive layout helpers */
+@media (min-width: 760px){
+  body{padding: 28px}
+  h1{font-size: 2rem}
+  section{padding: 22px}
+}
+
+/* Accessibility helpers */
+a{color: var(--primary)}
+button, .btn{background: var(--primary); color: #fff; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer}
+
+.footer-note{font-size: 0.9rem; color: var(--muted); margin-top: 8px}
