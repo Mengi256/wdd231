@@ -469,7 +469,7 @@ dialog::backdrop {
   animation: fadeIn 1s ease forwards;
 }
 .card a:link,
-.card a:visited{
+.card a:visited, .card-discover a:link, .card-discover a:visited{
     display: block;
     color: var(--secondary-color);
 }
@@ -478,6 +478,7 @@ dialog::backdrop {
     color: var(--secondary-color);
     text-align: center;
 }
+
 
 .card:nth-child(1) { animation-delay: .2s; }
 .card:nth-child(2) { animation-delay: .4s; }
@@ -538,7 +539,14 @@ padding: 1rem;
 
 }
 
-
+.card-discover a:link,
+.card-discover a:visited{
+    font-family: var(--paragraph-font);
+    margin: 1rem  2rem;
+    text-decoration: none;
+    border-bottom: 1px solid var(--secondary-color);
+   
+}
 
 .card-discover img {
 

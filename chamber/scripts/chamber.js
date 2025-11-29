@@ -221,9 +221,10 @@ if (discoverGrid) {
                 card.classList.add("card-discover");
                 card.innerHTML = `
                     <h2>${place.name}</h2>
-                    <figure><img src="${place.image}" alt="${place.name}"></figure>
+                    <figure><img src="${place.image}" alt="${place.name}" loading ="lazy"></figure>
                     <address>${place.address}</address>
                     <p>${place.description}</p>
+                    <a href="${place.website}">Learn More </a>
                 `;
                 discoverGrid.appendChild(card);
             });
