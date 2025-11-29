@@ -218,7 +218,7 @@ if (discoverGrid) {
         .then(module => {
             module.places.forEach(place => {
                 const card = document.createElement("div");
-                card.classList.add("card");
+                card.classList.add("card-discover");
                 card.innerHTML = `
                     <h2>${place.name}</h2>
                     <figure><img src="${place.image}" alt="${place.name}"></figure>
