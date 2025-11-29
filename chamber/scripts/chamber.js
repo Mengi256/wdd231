@@ -234,7 +234,7 @@ if (discoverGrid) {
         });
 }
 
-// ===== Visit Message =====
+
 const visitMessage = document.getElementById('visit-message');
 if (visitMessage) {
     const now = Date.now();
