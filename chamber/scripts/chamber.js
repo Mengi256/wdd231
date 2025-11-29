@@ -1,51 +1,50 @@
 
 
-document.getElementById("timestamp").value = new Date().toISOString();
 
+// ===== Timestamp for Join Page =====
+const timestamp = document.getElementById("timestamp");
+if (timestamp) {
+    timestamp.value = new Date().toISOString();
+}
 
+// ===== Modal Dialogs =====
 const modalLinks = document.querySelectorAll("[data-modal]");
-const modals = document.querySelectorAll("dialog"); 
 const closes = document.querySelectorAll(".close");
 
-
 modalLinks.forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    const modalId = link.dataset.modal;
-    const modal = document.getElementById(modalId);
-    modal.showModal();  
-  });
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        const modalId = link.dataset.modal;
+        const modal = document.getElementById(modalId);
+        if (modal) modal.showModal();
+    });
 });
-
 
 closes.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const dialog = btn.closest("dialog");
-    dialog.close();     
-  });
+    btn.addEventListener("click", () => {
+        const dialog = btn.closest("dialog");
+        if (dialog) dialog.close();
+    });
 });
 
-
-
-
 // ===== Members Section =====
-const members_container = document.querySelector("#members-container");
+const membersContainer = document.querySelector("#members-container");
 const gridBtn = document.querySelector("#grid-btn");
 const listBtn = document.querySelector("#list-btn");
 
-if (members_container) {
+if (membersContainer) {
     async function getMembers() {
         try {
             const response = await fetch("data/members.json");
             const data = await response.json();
-            DisplayMembers(data.members);
+            displayMembers(data.members);
         } catch (error) {
             console.error("Error loading members:", error);
         }
     }
 
-    function DisplayMembers(members) {
-        members_container.innerHTML = '';
+    function displayMembers(members) {
+        membersContainer.innerHTML = '';
         members.forEach(member => {
             const div = document.createElement("div");
             div.classList.add('member-box');
@@ -55,9 +54,9 @@ if (members_container) {
                 <p>${member.address}</p>
                 <p>${member.phoneNumber}</p>
                 <p><strong>Membership:</strong> <span>${member.membership}</span></p>
-                <a href="${member.website}">Visit Our Website</a>
+                <a href="${member.website}" target="_blank">Visit Our Website</a>
             `;
-            members_container.appendChild(div);
+            membersContainer.appendChild(div);
         });
     }
 
@@ -65,37 +64,37 @@ if (members_container) {
 
     if (gridBtn && listBtn) {
         gridBtn.addEventListener('click', () => {
-            members_container.classList.add('grid');
-            members_container.classList.remove('list');
+            membersContainer.classList.add('grid');
+            membersContainer.classList.remove('list');
         });
-
         listBtn.addEventListener('click', () => {
-            members_container.classList.add('list');
-            members_container.classList.remove('grid');
+            membersContainer.classList.add('list');
+            membersContainer.classList.remove('grid');
         });
     }
 }
 
-
+// ===== Footer Dates =====
 const year = document.querySelector("#year");
 if (year) year.textContent = new Date().getFullYear();
 
-const lastmodified = document.querySelector("#lastmodified");
-if (lastmodified) lastmodified.textContent = `LastModified: ${document.lastModified}`;
+const lastModified = document.querySelector("#lastmodified");
+if (lastModified) lastModified.textContent = `LastModified: ${document.lastModified}`;
 
+// ===== Responsive Menu =====
 const menu = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
-const header_img_box = document.querySelector(".header-img-box");
+const headerImgBox = document.querySelector(".header-img-box");
 
-if (menu && navigation && header_img_box) {
+if (menu && navigation && headerImgBox) {
     menu.addEventListener("click", () => {
         menu.classList.toggle("show");
         navigation.classList.toggle("show");
-        header_img_box.classList.toggle("show");
+        headerImgBox.classList.toggle("show");
     });
 }
 
-
+// ===== Weather Section =====
 const currentWeatherDiv = document.querySelector("#current-weather");
 const forecastDiv = document.querySelector("#forecast");
 
@@ -108,15 +107,12 @@ function formatTime(timestamp, timezoneOffset) {
     let hours = date.getUTCHours();
     const minutes = date.getUTCMinutes();
     const ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12;
-    if (hours === 0) hours = 12;
-    return `${hours}:${minutes.toString().padStart(2,'0')} ${ampm}`;
+    hours = hours % 12 || 12;
+    return `${hours}:${minutes.toString().padStart(2, '0')} ${ampm}`;
 }
-
 
 async function getCurrentWeather() {
     if (!currentWeatherDiv) return;
-
     try {
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
         const response = await fetch(url);
@@ -132,13 +128,13 @@ async function getCurrentWeather() {
 
         currentWeatherDiv.innerHTML = `
             <h2>Current Weather</h2>
-            <p> <strong>${temp}°F</strong> 
-             <p> ${description}</p>
+            <p><strong>${temp}°F</strong></p>
+            <p>${description}</p>
             <p>High: ${tempHigh}°F</p>
             <p>Low: ${tempLow}°F</p>
             <p>Humidity: ${humidity}%</p>
-            <p>Sunrise: ${sunrise} </p>
-             <p> Sunset: ${sunset}</p>
+            <p>Sunrise: ${sunrise}</p>
+            <p>Sunset: ${sunset}</p>
         `;
     } catch (error) {
         currentWeatherDiv.textContent = "Unable to fetch weather data.";
@@ -146,41 +142,29 @@ async function getCurrentWeather() {
     }
 }
 
-
 async function getForecast() {
     if (!forecastDiv) return;
-
     try {
         const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
         const response = await fetch(url);
         const data = await response.json();
 
         forecastDiv.innerHTML = `<h2>Weather Forecast</h2>`;
-
         const forecastDays = [];
-        const today = new Date().toISOString().split("T")[0]; 
+        const today = new Date().toISOString().split("T")[0];
 
-        
         for (const item of data.list) {
             const date = item.dt_txt.split(" ")[0];
             if (!forecastDays.includes(date) && date >= today) {
                 forecastDays.push(date);
             }
-            if (forecastDays.length === 3) break; 
+            if (forecastDays.length === 3) break;
         }
 
-        // Display forecast
         forecastDays.forEach((date, index) => {
             const dayData = data.list.find(item => item.dt_txt.startsWith(date));
             const temp = Math.round(dayData.main.temp);
-            let dayName;
-
-            if (index === 0) {
-                dayName = "Today"; 
-            } else {
-                dayName = new Date(date).toLocaleDateString("en-US", { weekday: "long" });
-            }
-
+            const dayName = index === 0 ? "Today" : new Date(date).toLocaleDateString("en-US", { weekday: "long" });
             const p = document.createElement("p");
             p.textContent = `${dayName}: ${temp}°F`;
             forecastDiv.appendChild(p);
@@ -192,25 +176,18 @@ async function getForecast() {
     }
 }
 
-
-
 getCurrentWeather();
 getForecast();
 
-
+// ===== Spotlight Section =====
 const spotlightContainer = document.querySelector("#spotlight-container");
-
 if (spotlightContainer) {
     async function getSpotlightMembers() {
         try {
             const response = await fetch("data/members.json");
             const data = await response.json();
-
-            const eligibleMembers = data.members.filter(member =>
-                member.membership.toLowerCase() === "gold" || member.membership.toLowerCase() === "silver"
-            );
-
-            const shuffled = eligibleMembers.sort(() => 0.5 - Math.random());
+            const eligible = data.members.filter(m => ["gold","silver"].includes(m.membership.toLowerCase()));
+            const shuffled = eligible.sort(() => 0.5 - Math.random());
             const spotlightMembers = shuffled.slice(0, Math.floor(Math.random() * 2) + 2);
 
             spotlightContainer.innerHTML = '';
@@ -231,8 +208,46 @@ if (spotlightContainer) {
             console.error("Error loading spotlight members:", error);
         }
     }
-
     getSpotlightMembers();
 }
 
+// ===== Discover Page =====
+const discoverGrid = document.querySelector("#discover-grid");
+if (discoverGrid) {
+    import("../data/discover.mjs")
+        .then(module => {
+            module.places.forEach(place => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.innerHTML = `
+                    <h2>${place.name}</h2>
+                    <figure><img src="${place.image}" alt="${place.name}"></figure>
+                    <address>${place.address}</address>
+                    <p>${place.description}</p>
+                `;
+                discoverGrid.appendChild(card);
+            });
+        })
+        .catch(err => {
+            console.error("Discover data load error:", err);
+            discoverGrid.innerHTML = "<p>Error loading discover items.</p>";
+        });
+}
 
+// ===== Visit Message =====
+const visitMessage = document.getElementById('visit-message');
+if (visitMessage) {
+    const now = Date.now();
+    const lastVisit = localStorage.getItem('lastVisit');
+
+    if (!lastVisit) {
+        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const diffDays = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+        if (diffDays === 0) visitMessage.textContent = "Back so soon! Awesome!";
+        else if (diffDays === 1) visitMessage.textContent = "You last visited 1 day ago.";
+        else visitMessage.textContent = `You last visited ${diffDays} days ago.`;
+    }
+
+    localStorage.setItem('lastVisit', now);
+}

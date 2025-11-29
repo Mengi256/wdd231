@@ -61,6 +61,13 @@
 .form-and-cards{
     display: flex;
 }
+.discover-grid{
+    grid-template-areas: "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8";
+    gap: 1rem;
+}
 
 footer{
     grid-template-columns: 1fr 1fr 1fr;
@@ -73,5 +80,10 @@ footer{
         max-width: 70rem;
         margin: 0 auto;
     }
+    .discover-grid{
+    grid-template-areas: "card1 card2 card3 card4"
+    "card5 card6 card7 card8";
+    gap: 1rem;
+}
     
 }
