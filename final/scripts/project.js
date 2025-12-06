@@ -26,19 +26,6 @@ if (menuHamburger && navigation && headerNav) {
 
 
 
-const icon_btn = document.querySelector(".icon");
-const problems = document.querySelector(".problems");
-const problem_hide = document.querySelector("#problem-hide");
-
-if (problems && problem_hide && icon_btn) {
-  problems.addEventListener("click", function (e) {
-    e.preventDefault();
-    problem_hide.classList.toggle("unhide");
-    icon_btn.classList.toggle("rotate");
-  });
-}
-
-
 const quick_icon = document.querySelector(".quick-icon");
 
 const links_box = document.querySelector(".links-box");
