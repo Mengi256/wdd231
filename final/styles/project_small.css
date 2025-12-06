@@ -601,6 +601,10 @@ display: flex;
     padding: 1rem 1rem 2rem 1rem;
     color: var(--primary-color);
     text-decoration: underline;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: var(--heading-font-family);
+    text-align: center;
 }
 
 
