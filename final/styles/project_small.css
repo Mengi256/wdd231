@@ -64,7 +64,7 @@ li{
   } 
   
 #home-header {
-     background:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)) ,url("https://mengi256.github.io/wdd231/final/images/hero.webp");
+     background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)) ,url("https://mengi256.github.io/wdd231/final/images/hero.webp");
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ li{
 
 
 #donate-header{
-        background:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url("https://mengi256.github.io/wdd231/final/images/girls-smiling.webp");
+        background:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),url("https://mengi256.github.io/wdd231/final/images/girls-smiling.webp");
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ li{
 
 }
 #contact-header{
-     background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("https://mengi256.github.io/wdd231/final/images/girls-smiling.webp");
+     background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("https://mengi256.github.io/wdd231/final/images/girls-smiling.webp");
         
 
     background-size: cover; 
@@ -104,7 +104,7 @@ li{
 
 }
 #about-header{
-        background:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("https://mengi256.github.io/wdd231/final/images/girls-smiling.webp");
+        background:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("https://mengi256.github.io/wdd231/final/images/girls-smiling.webp");
         
     background-size: cover; 
     background-position: center;
