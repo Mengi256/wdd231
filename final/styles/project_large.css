@@ -1,0 +1,314 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+
+ :root {
+  --primary-color: #330033;
+  --secondary-color: #800080;
+  --accentcolor1: #ee8eee;
+  --accentcolor2:#e63946;
+  --background-color: #f2e6f2;
+  --statement-font-family: "Lora",sans-serif;
+  --paragraphy-font-family: "Raleway", sans-serif;
+  --heading-font-family: "Roboto",sans-serif;
+}
+
+@media(min-width: 700px){
+ 
+.home-heading{
+    font-size: 3rem;
+    text-align: center;
+}
+  #donate-btn:link,
+  #donate-btn:visited{
+    display: block;
+    padding: 1rem 2rem;
+  }
+    
+  .hide-box{
+    display: none;
+  }
+
+
+    /* HOME PAGE */
+.reality-box{
+grid-template-columns: 1fr 1fr;
+padding: 2rem;
+    
+}
+.message{
+    margin: 2rem auto;
+}
+.reality-para{
+    font-size: 0.8rem;
+    border-left: 3px solid var(--accentcolor2);
+    border-radius: 10px;
+    padding: 0.8rem;
+    
+}
+
+/* ABOUT PAGE */
+
+ .our-story-section{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+
+    
+    
+} 
+
+.header-lists{
+    border: none;
+}
+.mission-vision{
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 60rem;
+    margin: 2rem auto;
+
+}
+.values-box{
+     
+    margin: 0;
+    border-radius: 10px;
+    
+}
+.values{
+    padding: 1rem ;
+}
+
+.values-box h3{
+   text-align: left; 
+   margin-left: 0;
+   border-radius: 10px 10px 0 10px;
+   
+   color:#fff;
+   padding: 1rem;
+
+   
+} 
+.volunteer-box{
+   flex-direction:row;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    
+}
+
+#programs-container{
+    
+    grid-template-columns: 1fr 1fr 1fr;
+   
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-form{
+   max-width: 20rem;
+}
+.links-box{
+    padding: 2rem;
+}
+.follow-us{
+    margin: 1rem auto;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+}
+
+
+@media(min-width:900px)
+
+{ 
+   main{
+    max-width: 70rem;
+    margin: 0 auto;
+   }
+    
+  
+  
+    /* HOME PAGE */
+.home-heading{
+    font-size: 2.8rem;
+}
+
+
+
+
+.desktop-logo{
+    width: 6rem;
+    display: block;
+}
+.logo-box{
+    display: none;
+}
+  .nav{
+    display: block;
+    width: 100%;
+    background:rgba(255,255,255,0.1);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(6px);
+   box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+   border-bottom: 1px solid rgba(255,255,255,0.3);
+ color: var(--background-color);
+ position: fixed;
+ z-index: 1;
+
+} 
+.desktop-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+ .nav-box{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--background-color);
+    position: fixed;
+    gap: 1rem;
+    width: 100%;
+}
+.hidden-mobile{
+    display: block;
+
+}
+.current{
+    
+    text-decoration: underline;
+
+}
+#desktop-donate-btn:link,
+#desktop-donate-btn:visited{
+    display: block;
+    background-color: var(--accentcolor1);
+    color: var(--primary-color) ;
+    font-weight: 700;
+    padding: 1rem ;
+}
+    
+#navigation{
+    display: flex;
+    align-items: center;
+    
+}
+   
+ .nav-btn:link,
+.nav-btn:visited{
+        display: inline-block;
+    background-color:var(--accentcolor2);
+     padding: 0.6rem 1.4rem;
+   
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    }
+    
+    
+  
+    .nav-header-links:link,
+    .nav-header-links:visited{
+        font-family: var(--paragraphy-font-family);
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        
+    }
+
+    .home-heading{
+        max-width: 38rem;
+    }
+
+.reality-box{
+grid-template-columns: 1fr 1fr;
+padding: 2rem;
+    
+}
+.reality-para{
+    font-size: 1rem;
+    border-left: 6px solid var(--accentcolor2);
+    border-radius: 10px;
+    padding: 4rem;
+    border-right: 6px solid var(--accentcolor2);
+}
+.reality-img{
+    border-radius: 10px;
+}
+
+
+
+.home-donations{
+    margin: 2rem auto;
+    max-width: 50rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.donate-box{
+    box-shadow: 8px 8px 20px rgba(240, 126, 233, 0.6);
+}
+
+/* ABOUT PAGE */
+#programs-container{
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+
+}
+ .our-story-section{
+    grid-template-columns: 1fr 1fr 1fr ;
+    max-width: 70rem;
+    margin: 2rem auto;
+} 
+
+.last-story{
+    grid-column: 1/-1;
+    max-width: 100%;
+} 
+.mission-vision{
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 60rem;
+    margin: 2rem auto;
+   
+}
+
+
+
+.donating-ways{
+    max-width: 70rem;
+    margin: 2rem auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:stretch;
+}
+
+
+
+.contact-section{
+    padding-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+}
