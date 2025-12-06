@@ -63,7 +63,7 @@ li{
   } 
   
 #home-header {
-     background:linear-gradient( rgba(128, 126, 126, 0.6), rgba(243, 240, 240, 0.1)), url(/final/images/hero.webp);
+     background: url(/final/images/hero.webp);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@ li{
 
 
 #donate-header{
-        background: linear-gradient( rgba(128, 126, 126, 0.6), rgba(243, 240, 240, 0.1)),url(/final/images/girls-smiling.webp);
+        background:url(/final/images/girls-smiling.webp);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ li{
 
 }
 #contact-header{
-        background: linear-gradient( rgba(128, 126, 126, 0.6), rgba(243, 240, 240, 0.1)),url(/final/images/girls-smiling.webp);
+        background: url(/final/images/girls-smiling.webp);
 
     background-size: cover; 
     background-position: center;
@@ -102,7 +102,7 @@ li{
 
 }
 #about-header{
-        background: linear-gradient( rgba(128, 126, 126, 0.6), rgba(243, 240, 240, 0.1)),url(/final/images/girls-smiling.webp);
+        background: url(/final/images/girls-smiling.webp);
         
     background-size: cover; 
     background-position: center;
