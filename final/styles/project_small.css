@@ -59,11 +59,12 @@ li{
   header{
     padding: 0;
     margin: 0;
+    background-color: var(--primary-color);
     
   } 
   
 #home-header {
-     background: url(/final/images/hero.webp);
+     background:url(/final/images/hero.webp);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -273,7 +274,7 @@ li{
 
 
 .home-heading{
-    color: var(--primary-color);
+    color: #fff;
    font-size: 1.8rem;
   text-transform: uppercase;
   
