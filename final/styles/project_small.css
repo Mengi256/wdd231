@@ -89,7 +89,8 @@ li{
 
 }
 #contact-header{
-         background: url(/final/images/hero.webp);
+        background: linear-gradient( rgba(128, 126, 126, 0.6), rgba(243, 240, 240, 0.1)),url(/final/images/girls-smiling.webp);
+
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +102,8 @@ li{
 
 }
 #about-header{
-         background: url(/final/images/what-we-do.webp);
+        background: linear-gradient( rgba(128, 126, 126, 0.6), rgba(243, 240, 240, 0.1)),url(/final/images/girls-smiling.webp);
+        
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -131,7 +133,8 @@ li{
   
 }
 .header-donate-btn{
-    background-color: var(--primary-color);
+    background-color: var(--accentcolor2);
+    color: #330033;
     padding: .4rem;
     margin-left: 2rem;
     
