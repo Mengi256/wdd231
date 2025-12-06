@@ -161,7 +161,7 @@ body{
    -webkit-backdrop-filter: blur(6px);
    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
    border-bottom: 1px solid rgba(255,255,255,0.3);
- color: var(--background-color);
+ color: var(--primary-color);
  position: fixed;
  z-index: 1;
 
