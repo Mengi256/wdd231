@@ -134,11 +134,12 @@ li{
 }
 .header-donate-btn{
     background-color: var(--accentcolor2);
-    color: #330033;
+
     padding: .4rem;
     margin-left: 2rem;
-    
+  color: #fff; 
 }
+
 
 
 #menu{
@@ -248,13 +249,14 @@ li{
 #donate-btn:link,
 #donate-btn:visited{
     display: block;
-    color: var(--background-color);
       padding: .2rem  ;
       text-decoration: none;
       font-weight: 800;
-      
+  color: #330033; 
+}
+
     
-} 
+
 .header-info{
     display: flex;
     flex-direction: column;
@@ -916,6 +918,9 @@ footer h3{
     
    
   
+}
+.quick-link {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .links-box.unhide .quick-list{
