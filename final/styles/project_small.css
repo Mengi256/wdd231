@@ -817,10 +817,11 @@ textarea{
 footer{
     padding: 2rem 1rem 1rem 1rem;
     background-color: var(--primary-color);
+    color: #fff;
     
 }
 #tagline{
-    color:var(--background-color);
+    
     text-align: center;
 }
 .footer-form{
