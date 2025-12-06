@@ -63,7 +63,7 @@ li{
   } 
   
 #home-header {
-     background: url(../images/hero.webp);
+     background: url(/final/images/hero.webp);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@ li{
 
 
 #donate-header{
-        background: linear-gradient( rgba(32,32,32, 0.6), rgba(32,32,32,0.6)),url(../images/girls-smiling.webp);
+        background: linear-gradient( rgba(32,32,32, 0.6), rgba(32,32,32,0.6)),url(/final/images/girls-smiling.webp);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ li{
 
 }
 #contact-header{
-         background: url(../images/hero.webp);
+         background: url(/final/images/hero.webp);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ li{
 
 }
 #about-header{
-         background: url(../images/what-we-do.webp);
+         background: url(/final/images/what-we-do.webp);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
