@@ -133,11 +133,10 @@ li{
   
 }
 .header-donate-btn{
-    background-color: var(--accentcolor2);
-
-    padding: .4rem;
+    background-color:#fff;
+  padding: .4rem;
     margin-left: 2rem;
-  color: #fff; 
+
 }
 
 
@@ -252,7 +251,7 @@ li{
       padding: .2rem  ;
       text-decoration: none;
       font-weight: 800;
-  color: #330033; 
+  color:var(--primary-color); 
 }
 
     
@@ -896,14 +895,11 @@ footer h3{
     gap: 1rem;
    padding: 1rem 0;
    opacity: 0;
-   background:rgba(255,255,255,0.2);
-   backdrop-filter: blur(10px);
-   -webkit-backdrop-filter: blur(6px);
-   border-radius: 10px;
-   box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-   border-bottom: 1px solid rgba(255,255,255,0.3);
+   
+   box-shadow: 4px 4px 15px rgba(210, 202, 202, 0.1);
+   
    margin-bottom: 0;
-   color: var(--primary-color);
+   
 
 
 }
@@ -920,7 +916,8 @@ footer h3{
   
 }
 .quick-link {
-  background-color: rgba(255, 255, 255, 0.6);
+  color:#fff;
+  
 }
 
 .links-box.unhide .quick-list{
